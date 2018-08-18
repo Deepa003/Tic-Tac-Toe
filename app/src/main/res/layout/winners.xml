@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+
+    >
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Please enter your name"
+    android:textSize="17sp"
+    android:fontFamily="sans-serif"
+    android:id="@+id/tview"
+    android:layout_above="@+id/editText"
+    android:layout_centerInParent="true"
+    android:textColor="@android:color/primary_text_light"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="200sp"
+        android:maxLines="1"
+        android:id="@+id/editText"
+        android:layout_marginTop="5sp"
+        android:text=" "
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/bsubmit"
+        android:layout_below="@+id/editText"
+        android:layout_marginTop="5sp"
+        android:minWidth="100sp"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"/>
+</LinearLayout>

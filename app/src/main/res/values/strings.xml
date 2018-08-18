@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Kris-Kros</string>
+    <string name="label">Select the players</string>
+    <string-array name="xyz">
+        <item>Player 1 vs Player 2</item>
+        <item>Player 1 vs Computer</item>
+    </string-array>
+
+    <string name="interstitial_full_screen">ca-app-pub-7114365058699668/6820375409</string>
+
+</resources>

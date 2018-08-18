@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/back"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="com.example.renu.tic_tac_toe.Help">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_help"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleTextAppearance="@style/Toolbar.TitleText"
+        app:title="Kris-Kros"
+        app:titleMargins="0dp">
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_weight=".1"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+       <!-- <ImageButton
+            android:layout_width="45sp"
+            android:layout_height="45sp"
+            android:id="@+id/imageButton2"
+            android:src="@drawable/home"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_weight=".1"
+            />-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:text="How To Play"
+        android:fontFamily="palatino"
+        android:textStyle="bold"
+        android:textAppearance="@style/AppTheme"
+        android:textColor="#2E4053"
+        android:id="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/imageButton2"
+        android:layout_gravity="center"
+        android:layout_weight=".9"/>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="Kris - Kros ( TicTacToe ) is the game for one or two players.The player who succeds in placing three of their marks in a horizontal,vertical or diagonal row wins the gamePlayers soon discover that best play from both parties leads to a draw.The branch of artificial intelligence that deals with the searching of game trees.It is straightforward to write a computer program to play TicTacToe perfectly."
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:fontFamily="fantasy"
+        android:layout_centerInParent="true"
+        android:layout_weight=".9"/>
+
+
+
+</LinearLayout>

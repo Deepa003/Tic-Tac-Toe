@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/tools"
+    android:gravity="center_horizontal"
+    android:background="@drawable/texture">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_homescreen"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleTextAppearance="@style/Toolbar.TitleText"
+        app:title="Kris-Kros"
+        app:titleMargins="0dp">
+    </android.support.v7.widget.Toolbar>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/spinner"
+        android:prompt="@string/label"
+        android:layout_marginTop="25dp"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        android:layout_below="@+id/toolbar_homescreen"
+        />
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rl"
+    android:layout_below="@id/spinner"
+    android:layout_marginTop="20sp"
+    android:layout_centerInParent="true"
+    android:orientation="horizontal"
+    android:weightSum="1"
+    android:gravity="center">
+
+
+    <Button
+        android:id="@+id/bplay"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/bquit"
+        android:layout_alignParentStart="true"
+        android:layout_marginRight="5dp"
+        android:layout_weight="0.3"
+        android:text="Play"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:textColor="#000000"
+        android:background="@drawable/button_img" />
+
+    <Button
+        android:id="@+id/bquit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Quit"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/bplay"
+        android:layout_weight="0.3"
+        android:background="@drawable/button_img"
+        android:textColor="#000000"
+        />
+</LinearLayout>
+
+<!--
+    android:text="Tic-Tac-Toe is a fun interactive game that you can play any time and anywhere.The simplicity of TicTacToe makes it ideal as a pedagogical tool for teaching the concepts of good sportsmanship."
+-->
+
+
+    <ImageView
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        android:id="@+id/animate"
+        android:src="@drawable/animate_logo"
+        android:layout_below="@+id/rl"
+        android:layout_marginTop="26sp"
+        />
+
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-7114365058699668/1561159234">
+    </com.google.android.gms.ads.AdView>
+
+
+
+
+</RelativeLayout>
